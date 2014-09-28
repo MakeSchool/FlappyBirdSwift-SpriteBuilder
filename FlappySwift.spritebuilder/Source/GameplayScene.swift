@@ -20,7 +20,11 @@ class GameplayScene: CCNode, CCPhysicsCollisionDelegate {
     var physicsNode: CCPhysicsNode? = nil
     var trail: CCParticleSystem? = nil
     var points: Int = 0
+    
+    // put variables below this line
     var timeSinceObstacle:CCTime = 0
+    // put variables above this line
+    
     
     func initialize() {
         // put your initialization code below this line

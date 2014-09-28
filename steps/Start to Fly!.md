@@ -1,61 +1,55 @@
+Basic Syntax
+============
+
+Swift syntax for declaring and calling methods follows a pattern similar to many languages such as Java or Python, although the specifics are a little bit different.
+
+To call a method: ```ObjectName.methodNameToCall()```
+For example: ```character.jump()```
+To call a method and pass a parameter: ```ObjectName.methodName(parameter)```
+For example: ```self.addChild(character)```
+
+
+Make the Bird Flap!
+=======================
+For your game to respond to input, we have to write a new method to be run whenever the player taps the screen. Add the following after the closing bracket of the init method but before the final closing bracket of the program:
+
+	func tap()
+	{
+        // this will get called every time the player
+    	// taps the screen.
+    }
+
+Now that we have code that is run every time the player taps the screen, we want to make the bird flap. Inside your ```tap``` method, add the following code:
+
+	if let cCharacter = character
+	{
+        cCharacter.flap()
+    }
+
+Now run the game again. This time, try to tap on the screen to see the bird flap!
+
 Method Syntax
 =============
 
-To declare a method in Objective-C, follow the following format:
+As we've seen in the ```tap``` method, you can creating methods in Swift using the ```func```. ("func" stands for "function", which is another name for a method.)
 
-	-(type I return) nameOfMethod:
-	(type of first parameter) firstParameter
-	continuationOfMethodName:
-	(type of second parameter) secondParameter
-
-For example, to declare a method that does not return anything and does not accept any parameters:
-
-	-(void) doSomething
+	func nameOfMethod()
 	{
-		NSLog(@"Hello World!");
+        // ... put as many lines of code here as you want
 	}
 
-Or, to declare a method that returns an int and accepts a string:
+The above method does not accept any parameters, and doesn't return any values. Methods that take in parameters and return a value use the following syntax:
 
-	-(int) doSomethingWithAString: (NSString *) myString
+	func nameOfMethod(firstParameter : typeOfFirstParameter, secondParameter : typeOfSecondParameter) -> returnType
 	{
-		//returns the length of the string times ten
-		return [myString length] * 10;
+		// ... any code needed to compute myReturnValue
+		return myReturnValue
 	}
 
-Or, to declare a method that returns an array and accepts multiple strings:
+Here's one more example method. This one returns an Int and accepts a String:
 
-
-	-(NSArray *) addThisStringToAnArray: (NSString *) firstString
-						andThisString: (NSString *) secondString
-						andAlsoThisString: (NSString *) thirdString
-	{
-		return [NSArray arrayWithObjects: firstString,
-			secondString,
-			thirdString, nil];
-	}
-
-Adding a jump!
-=======================
-
-For your game to respond to input, we have to write a new method to be run whenever
-the player touches the screen. Add the following after the closing bracket of the init method
-but before the ```@end```:
-
-	- (void)touchBegan:(UITouch *)touch withEvent:(UIEvent *)event
-	{
-		// this will get called every time the player
-		// touches the screen.
-	}
-
-Now that we have code that is run every time the player touches the screen, we want to make
-the character jump. To do that, we need to add a physics impulse. Inside your ```touchBegan```
-method, add the following code:
-
-	float impulse = 200-2*character.physicsBody.velocity.y;
-	[character.physicsBody applyImpulse:ccp(0, impulse)];
-
-Here the impulse is a vector pointing straight up. You can modify how far up the character
-goes by modifying the ```200```.
-
-Now run the game again. This time, try to click on the screen to see the fly jump up!
+    func doSomethingWithAString(myString : String) -> Int
+    {
+        // returns the length of the string times ten
+        return myString.utf16Count * 10
+    }
