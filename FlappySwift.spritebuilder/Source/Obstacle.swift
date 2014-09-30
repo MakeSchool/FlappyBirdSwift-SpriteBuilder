@@ -19,11 +19,12 @@ class Obstacle: CCNode {
     let ARC4RANDOM_MAX = 0x100000000
     
     func didLoadFromCCB() {
+        
         _topPipe!.physicsBody.collisionType = "level"
-        _topPipe!.physicsBody.sensor = true
+//        _topPipe!.physicsBody.sensor = true
         
         _bottomPipe!.physicsBody.collisionType = "level"
-        _bottomPipe!.physicsBody.sensor = true
+//        _bottomPipe!.physicsBody.sensor = true
     }
     
     func setupRandomPosition() {

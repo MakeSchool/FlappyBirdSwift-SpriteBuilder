@@ -17,42 +17,39 @@ enum DrawingOrder: Int {
 class GameplayScene: CCNode, CCPhysicsCollisionDelegate {
     
     var character: Character? = nil
-    var physicsNode: CCPhysicsNode? = nil
     var trail: CCParticleSystem? = nil
+    var physicsNode: CCPhysicsNode!
     var points: Int = 0
     
     // put variables below this line
     var timeSinceObstacle:CCTime = 0
     // put variables above this line
     
-    
     func initialize() {
         // put your initialization code below this line
+        
         character = Character.createFlappy()
         self.addToScene(character)
         
-        // put your initialization code above this line
         self.addObstacle()
         timeSinceObstacle = 0
         
         self.showScore()
+        
+        // put your initialization code above this line
     }
     
     // put new methods below this line
     
     func tap() {
-        if let cCharacter = character {
-            cCharacter.flap()
-        }
+        character!.flap()
     }
     
     override func update(delta: CCTime) {
         //this will be run every frame
         //delta is the time that has elapsed since the last time it was run.
         
-        if let cCharacter = character {
-            cCharacter.move()
-        }
+        character!.move()
         
         timeSinceObstacle += delta
         
@@ -75,7 +72,6 @@ class GameplayScene: CCNode, CCPhysicsCollisionDelegate {
     }
     
     // put new methods above this line
-    
     
     
     ///////////////////////////////////////////////////////

@@ -11,4 +11,6 @@
 #import "CCPhysics+ObjectiveChipmunk.h"
 #import "ObjectiveChipmunk/ObjectiveChipmunk.h"
 #import "CCButton.h"
+
+#import "cocos2d.h"
 //#import "CGPointExtension.h"
