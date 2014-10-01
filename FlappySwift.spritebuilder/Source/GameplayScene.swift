@@ -16,7 +16,7 @@ enum DrawingOrder: Int {
 
 class GameplayScene: CCNode, CCPhysicsCollisionDelegate {
     
-    var character: Character? = nil
+    var character: Character!
     var trail: CCParticleSystem? = nil
     var physicsNode: CCPhysicsNode!
     var points: Int = 0
@@ -32,6 +32,7 @@ class GameplayScene: CCNode, CCPhysicsCollisionDelegate {
         self.addToScene(character)
         
         self.addObstacle()
+        
         timeSinceObstacle = 0
         
         self.showScore()
@@ -42,27 +43,33 @@ class GameplayScene: CCNode, CCPhysicsCollisionDelegate {
     // put new methods below this line
     
     func tap() {
-        character!.flap()
+        character.flap()
     }
     
     override func update(delta: CCTime) {
         //this will be run every frame
         //delta is the time that has elapsed since the last time it was run.
         
-        character!.move()
+        character.move()
         
+        // Increment the time since the last obstacle was added
         timeSinceObstacle += delta
         
-        if timeSinceObstacle > 2 {
+        // Check to see if two seconds have passed
+        if timeSinceObstacle > 2
+        {
+            // Add a new obstacle
             self.addObstacle()
             
+            // Then reset the timer
             timeSinceObstacle = 0
         }
         
     }
     
-    //this gets called when the bird collides with an obstacle
-    func collisionWithObstacle() {
+    func collisionWithObstacle()
+    {
+        // This gets called when the bird collides with an obstacle
         self.gameOver()
     }
     

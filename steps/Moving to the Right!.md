@@ -18,8 +18,6 @@ Don't worry about that special ```override``` keyword at the beginning of the fu
 Making the Character Move
 In your update method, add the following:
 
-    if let cCharacter = character {
-        cCharacter.move()
-    }
+    character.move()
 
 Now run the game again. You should see the character moving now!

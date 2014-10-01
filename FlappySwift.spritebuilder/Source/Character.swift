@@ -24,7 +24,7 @@ class Character: CCSprite {
         self.physicsBody.velocity = CGPoint(x:80.0, y:self.physicsBody.velocity.y)
     }
     
-    class func createFlappy() -> Character? {
-        return CCBReader.load("Character") as Character?
+    class func createFlappy() -> Character! {
+        return CCBReader.load("Character") as Character!
     }
 }

@@ -41,7 +41,7 @@ class MainScene: GameplayScene {
         
         for ground in _grounds {
             // set collision type
-            ground.physicsBody.collisionType = "level"
+            ground.physicsBody.collisionType = "ground"
             ground.zOrder = DrawingOrder.Ground.toRaw()
         }
         
@@ -145,6 +145,11 @@ class MainScene: GameplayScene {
     }
     
     func ccPhysicsCollisionBegin(pair: CCPhysicsCollisionPair, character nodeA: CCNode, level nodeB: CCNode) -> Bool {
+        self.collisionWithObstacle()
+        return false
+    }
+    
+    func ccPhysicsCollisionBegin(pair: CCPhysicsCollisionPair, character nodeA: CCNode, ground nodeB: CCNode) -> Bool {
         self.collisionWithObstacle()
         return true
     }
