@@ -8,4 +8,3 @@ exports.Tutorial = () ->
   step "Moving to the Right!"
   step "Adding Obstacles"
   step "Finishing Up"
-  step "It's your turn!"
