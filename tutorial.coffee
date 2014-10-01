@@ -1,5 +1,5 @@
 exports             = exports ? @
-exports.DefaultFile = "FlappyBird.spritebuilder/Source/GameplayScene.swift"
+exports.DefaultFile = "FlappySwift.spritebuilder/Source/GameplayScene.swift"
 
 exports.Tutorial = () ->
   step "Welcome"
