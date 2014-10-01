@@ -12,7 +12,7 @@ class Character: CCSprite {
     
     func didLoadFromCCB() {
         self.position = CGPoint(x:115, y:250)
-        self.zOrder = DrawingOrder.Hero.toRaw()
+        self.zOrder = DrawingOrder.Hero.rawValue
         self.physicsBody.collisionType = "character"
     }
     

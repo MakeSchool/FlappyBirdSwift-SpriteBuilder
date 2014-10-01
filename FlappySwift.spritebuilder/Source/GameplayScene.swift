@@ -85,9 +85,15 @@ class GameplayScene: CCNode, CCPhysicsCollisionDelegate {
     //                  HIDE FROM USERS                  //
     ///////////////////////////////////////////////////////
     
+    #if os(iOS)
     override func touchBegan(touch: UITouch, withEvent event: UIEvent) {
         self.tap()
     }
+    #elseif os(OSX)
+    override func mouseDown(event: NSEvent) {
+        self.tap()
+    }
+    #endif
     
     override init() { }
     // is called when CCB file has completed loading

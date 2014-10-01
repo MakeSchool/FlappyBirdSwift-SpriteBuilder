@@ -42,7 +42,7 @@ class MainScene: GameplayScene {
         for ground in _grounds {
             // set collision type
             ground.physicsBody.collisionType = "ground"
-            ground.zOrder = DrawingOrder.Ground.toRaw()
+            ground.zOrder = DrawingOrder.Ground.rawValue
         }
         
         physicsNode.collisionDelegate = self
@@ -75,17 +75,26 @@ class MainScene: GameplayScene {
         _scoreLabel.string = "\(points)"
     }
     
-    override func touchBegan(touch: UITouch, withEvent event: UIEvent) {
-        
+    func handleTouch() {
         if !_gameOver {
             if let cCharacter = character {
                 cCharacter.physicsBody.applyAngularImpulse(10000.0)
             }
             _sinceTouch = 0.0
             
-            super.touchBegan(touch, withEvent:event)
+            super.tap()
         }
     }
+    
+    #if os(iOS)
+    override func touchBegan(touch: UITouch, withEvent event: UIEvent) {
+        handleTouch()
+    }
+    #elseif os(OSX)
+    override func mouseDown(event: NSEvent) {
+        handleTouch()
+    }
+    #endif
 
     override func gameOver() {
         if !_gameOver {
@@ -125,7 +134,7 @@ class MainScene: GameplayScene {
         }
         obstacle.setupRandomPosition()
         
-        obstacle.zOrder = DrawingOrder.Pipes.toRaw()
+        obstacle.zOrder = DrawingOrder.Pipes.rawValue
         if let cPhysicsNode = physicsNode {
             cPhysicsNode.addChild(obstacle)
         }

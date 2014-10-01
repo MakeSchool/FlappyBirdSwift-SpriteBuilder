@@ -39,6 +39,28 @@
 		B77F1B3E17B978D7009739AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77F1B3D17B978D7009739AE /* Foundation.framework */; };
 		B77F1B4017B978D7009739AE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77F1B3F17B978D7009739AE /* CoreGraphics.framework */; };
 		B77F1B4217B978D7009739AE /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77F1B4117B978D7009739AE /* CoreText.framework */; };
+		BE58971519DC799B00647263 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BE58971419DC799B00647263 /* AppDelegate.m */; };
+		BE58971719DC799B00647263 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BE58971619DC799B00647263 /* main.m */; };
+		BE58971919DC799B00647263 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE58971819DC799B00647263 /* Images.xcassets */; };
+		BE58971C19DC799B00647263 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE58971A19DC799B00647263 /* MainMenu.xib */; };
+		BE58972819DC799B00647263 /* FlappySwiftOSXTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BE58972719DC799B00647263 /* FlappySwiftOSXTests.m */; };
+		BE58973B19DC7A2D00647263 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE58973A19DC7A2D00647263 /* Foundation.framework */; };
+		BE58973D19DC7A3400647263 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE58973C19DC7A3400647263 /* AudioToolbox.framework */; };
+		BE58973F19DC7A3B00647263 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE58973E19DC7A3B00647263 /* OpenAL.framework */; };
+		BE58974119DC7A4200647263 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE58974019DC7A4200647263 /* AVFoundation.framework */; };
+		BE58974319DC7A4900647263 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE58974219DC7A4900647263 /* QuartzCore.framework */; };
+		BE58974519DC7A5100647263 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE58974419DC7A5100647263 /* AppKit.framework */; };
+		BE58974719DC7A5500647263 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE58974619DC7A5500647263 /* OpenGL.framework */; };
+		BE58974919DC7A5A00647263 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE58974819DC7A5A00647263 /* GameKit.framework */; };
+		BE58974B19DC7A6100647263 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BE58974A19DC7A6100647263 /* libz.dylib */; };
+		BE58974C19DC7AB400647263 /* Published-iOS in Resources */ = {isa = PBXBuildFile; fileRef = B737893A180761570076A88C /* Published-iOS */; };
+		BE58974D19DC7AC000647263 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6DF0B019CE5E8100B211DF /* Character.swift */; };
+		BE58974E19DC7AC000647263 /* MainScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6DF0AC19CE4C5800B211DF /* MainScene.swift */; };
+		BE58974F19DC7AC000647263 /* Obstacle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6DF0B219CE65F900B211DF /* Obstacle.swift */; };
+		BE58975019DC7AC000647263 /* GameplayScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6DF0AE19CE509700B211DF /* GameplayScene.swift */; };
+		BE58975119DC7AC000647263 /* Goal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9256DD19D6A650009C1D57 /* Goal.swift */; };
+		BE58975719DC7B3B00647263 /* MSCaptureGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE58975619DC7B3B00647263 /* MSCaptureGLView.m */; };
+		BE58975819DC800600647263 /* libcocos2d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BE58973519DC79AA00647263 /* libcocos2d.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +76,34 @@
 			containerPortal = B7378940180761A80076A88C /* cocos2d-ios.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 5018F24C0DFDEAC400C013A5;
+			remoteInfo = cocos2d;
+		};
+		BE58972219DC799B00647263 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B77F1B2617B978D7009739AE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE58970E19DC799B00647263;
+			remoteInfo = FlappySwiftOSX;
+		};
+		BE58973419DC79AA00647263 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE58972F19DC79A900647263 /* cocos2d-osx.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E01E663D121CA00A001A484F;
+			remoteInfo = cocos2d;
+		};
+		BE58973619DC79AA00647263 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE58972F19DC79A900647263 /* cocos2d-osx.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D37EE9FC187D4E7700CB5EF2;
+			remoteInfo = ObjectiveChipmunk;
+		};
+		BE58973819DC79B800647263 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE58972F19DC79A900647263 /* cocos2d-osx.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = E01E663C121CA00A001A484F;
 			remoteInfo = cocos2d;
 		};
 /* End PBXContainerItemProxy section */
@@ -95,6 +145,28 @@
 		B77F1B3F17B978D7009739AE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		B77F1B4117B978D7009739AE /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		B7B3713D180358F1007369CC /* libObjectiveChipmunk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libObjectiveChipmunk.a; path = "../libs/cocos2d-iphone/external/Chipmunk/xcode/build/Debug-iphoneos/libObjectiveChipmunk.a"; sourceTree = "<group>"; };
+		BE58970F19DC799B00647263 /* FlappySwiftOSX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlappySwiftOSX.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE58971219DC799B00647263 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE58971319DC799B00647263 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BE58971419DC799B00647263 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BE58971619DC799B00647263 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BE58971819DC799B00647263 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BE58971B19DC799B00647263 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		BE58972119DC799B00647263 /* FlappySwiftOSXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlappySwiftOSXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE58972619DC799B00647263 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE58972719DC799B00647263 /* FlappySwiftOSXTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlappySwiftOSXTests.m; sourceTree = "<group>"; };
+		BE58972F19DC79A900647263 /* cocos2d-osx.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "cocos2d-osx.xcodeproj"; path = "Source/libs/cocos2d-iphone/cocos2d-osx.xcodeproj"; sourceTree = "<group>"; };
+		BE58973A19DC7A2D00647263 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		BE58973C19DC7A3400647263 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/AudioToolbox.framework; sourceTree = DEVELOPER_DIR; };
+		BE58973E19DC7A3B00647263 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/OpenAL.framework; sourceTree = DEVELOPER_DIR; };
+		BE58974019DC7A4200647263 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		BE58974219DC7A4900647263 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		BE58974419DC7A5100647263 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/AppKit.framework; sourceTree = DEVELOPER_DIR; };
+		BE58974619DC7A5500647263 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/OpenGL.framework; sourceTree = DEVELOPER_DIR; };
+		BE58974819DC7A5A00647263 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/GameKit.framework; sourceTree = DEVELOPER_DIR; };
+		BE58974A19DC7A6100647263 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/lib/libz.dylib; sourceTree = DEVELOPER_DIR; };
+		BE58975519DC7B3B00647263 /* MSCaptureGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSCaptureGLView.h; sourceTree = "<group>"; };
+		BE58975619DC7B3B00647263 /* MSCaptureGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSCaptureGLView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,12 +188,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BE58970C19DC799B00647263 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE58975819DC800600647263 /* libcocos2d.a in Frameworks */,
+				BE58974B19DC7A6100647263 /* libz.dylib in Frameworks */,
+				BE58974919DC7A5A00647263 /* GameKit.framework in Frameworks */,
+				BE58974719DC7A5500647263 /* OpenGL.framework in Frameworks */,
+				BE58974519DC7A5100647263 /* AppKit.framework in Frameworks */,
+				BE58974319DC7A4900647263 /* QuartzCore.framework in Frameworks */,
+				BE58974119DC7A4200647263 /* AVFoundation.framework in Frameworks */,
+				BE58973F19DC7A3B00647263 /* OpenAL.framework in Frameworks */,
+				BE58973D19DC7A3400647263 /* AudioToolbox.framework in Frameworks */,
+				BE58973B19DC7A2D00647263 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE58971E19DC799B00647263 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		9222E2B918734FF800A246C7 /* libs */ = {
 			isa = PBXGroup;
 			children = (
+				BE58972F19DC79A900647263 /* cocos2d-osx.xcodeproj */,
 				B7378940180761A80076A88C /* cocos2d-ios.xcodeproj */,
 			);
 			name = libs;
@@ -177,6 +274,8 @@
 				B77F1B4617B978D7009739AE /* Resources */,
 				9222E2B918734FF800A246C7 /* libs */,
 				B77F1CCF17B978D8009739AE /* Supporting Files */,
+				BE58971019DC799B00647263 /* FlappySwiftOSX */,
+				BE58972419DC799B00647263 /* FlappySwiftOSXTests */,
 				B77F1B3017B978D7009739AE /* Frameworks */,
 				B77F1B2F17B978D7009739AE /* Products */,
 			);
@@ -186,6 +285,8 @@
 			isa = PBXGroup;
 			children = (
 				B77F1B2E17B978D7009739AE /* FlappySwift.app */,
+				BE58970F19DC799B00647263 /* FlappySwiftOSX.app */,
+				BE58972119DC799B00647263 /* FlappySwiftOSXTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -193,6 +294,15 @@
 		B77F1B3017B978D7009739AE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BE58974A19DC7A6100647263 /* libz.dylib */,
+				BE58974819DC7A5A00647263 /* GameKit.framework */,
+				BE58974619DC7A5500647263 /* OpenGL.framework */,
+				BE58974419DC7A5100647263 /* AppKit.framework */,
+				BE58974219DC7A4900647263 /* QuartzCore.framework */,
+				BE58974019DC7A4200647263 /* AVFoundation.framework */,
+				BE58973E19DC7A3B00647263 /* OpenAL.framework */,
+				BE58973C19DC7A3400647263 /* AudioToolbox.framework */,
+				BE58973A19DC7A2D00647263 /* Foundation.framework */,
 				8392007918EE8E3300B6C429 /* GLKit.framework */,
 				B7B3713D180358F1007369CC /* libObjectiveChipmunk.a */,
 				B77F1B3117B978D7009739AE /* QuartzCore.framework */,
@@ -226,6 +336,55 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		BE58971019DC799B00647263 /* FlappySwiftOSX */ = {
+			isa = PBXGroup;
+			children = (
+				BE58971319DC799B00647263 /* AppDelegate.h */,
+				BE58971419DC799B00647263 /* AppDelegate.m */,
+				BE58971819DC799B00647263 /* Images.xcassets */,
+				BE58971A19DC799B00647263 /* MainMenu.xib */,
+				BE58971119DC799B00647263 /* Supporting Files */,
+				BE58975519DC7B3B00647263 /* MSCaptureGLView.h */,
+				BE58975619DC7B3B00647263 /* MSCaptureGLView.m */,
+			);
+			path = FlappySwiftOSX;
+			sourceTree = "<group>";
+		};
+		BE58971119DC799B00647263 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BE58971219DC799B00647263 /* Info.plist */,
+				BE58971619DC799B00647263 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BE58972419DC799B00647263 /* FlappySwiftOSXTests */ = {
+			isa = PBXGroup;
+			children = (
+				BE58972719DC799B00647263 /* FlappySwiftOSXTests.m */,
+				BE58972519DC799B00647263 /* Supporting Files */,
+			);
+			path = FlappySwiftOSXTests;
+			sourceTree = "<group>";
+		};
+		BE58972519DC799B00647263 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BE58972619DC799B00647263 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BE58973019DC79A900647263 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE58973519DC79AA00647263 /* libcocos2d.a */,
+				BE58973719DC79AA00647263 /* libObjectiveChipmunk.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -248,6 +407,42 @@
 			productReference = B77F1B2E17B978D7009739AE /* FlappySwift.app */;
 			productType = "com.apple.product-type.application";
 		};
+		BE58970E19DC799B00647263 /* FlappySwiftOSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE58972919DC799B00647263 /* Build configuration list for PBXNativeTarget "FlappySwiftOSX" */;
+			buildPhases = (
+				BE58970B19DC799B00647263 /* Sources */,
+				BE58970C19DC799B00647263 /* Frameworks */,
+				BE58970D19DC799B00647263 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE58973919DC79B800647263 /* PBXTargetDependency */,
+			);
+			name = FlappySwiftOSX;
+			productName = FlappySwiftOSX;
+			productReference = BE58970F19DC799B00647263 /* FlappySwiftOSX.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BE58972019DC799B00647263 /* FlappySwiftOSXTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE58972C19DC799B00647263 /* Build configuration list for PBXNativeTarget "FlappySwiftOSXTests" */;
+			buildPhases = (
+				BE58971D19DC799B00647263 /* Sources */,
+				BE58971E19DC799B00647263 /* Frameworks */,
+				BE58971F19DC799B00647263 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE58972319DC799B00647263 /* PBXTargetDependency */,
+			);
+			name = FlappySwiftOSXTests;
+			productName = FlappySwiftOSXTests;
+			productReference = BE58972119DC799B00647263 /* FlappySwiftOSXTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -265,6 +460,13 @@
 							};
 						};
 					};
+					BE58970E19DC799B00647263 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					BE58972019DC799B00647263 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = BE58970E19DC799B00647263;
+					};
 				};
 			};
 			buildConfigurationList = B77F1B2917B978D7009739AE /* Build configuration list for PBXProject "FlappySwift" */;
@@ -273,6 +475,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = B77F1B2517B978D7009739AE;
 			productRefGroup = B77F1B2F17B978D7009739AE /* Products */;
@@ -282,10 +485,16 @@
 					ProductGroup = B7378941180761A80076A88C /* Products */;
 					ProjectRef = B7378940180761A80076A88C /* cocos2d-ios.xcodeproj */;
 				},
+				{
+					ProductGroup = BE58973019DC79A900647263 /* Products */;
+					ProjectRef = BE58972F19DC79A900647263 /* cocos2d-osx.xcodeproj */;
+				},
 			);
 			projectRoot = "";
 			targets = (
+				BE58970E19DC799B00647263 /* FlappySwiftOSX */,
 				B77F1B2D17B978D7009739AE /* FlappySwift */,
+				BE58972019DC799B00647263 /* FlappySwiftOSXTests */,
 			);
 		};
 /* End PBXProject section */
@@ -296,6 +505,20 @@
 			fileType = archive.ar;
 			path = libcocos2d.a;
 			remoteRef = B737894A180761A90076A88C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BE58973519DC79AA00647263 /* libcocos2d.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libcocos2d.a;
+			remoteRef = BE58973419DC79AA00647263 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BE58973719DC79AA00647263 /* libObjectiveChipmunk.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libObjectiveChipmunk.a;
+			remoteRef = BE58973619DC79AA00647263 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -320,6 +543,23 @@
 				B71F5918188484E7003F4D28 /* iPhone@2x.png in Resources */,
 				B7378977180762440076A88C /* Default.png in Resources */,
 				B71F5911188484E7003F4D28 /* iPad-old.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE58970D19DC799B00647263 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE58974C19DC7AB400647263 /* Published-iOS in Resources */,
+				BE58971919DC799B00647263 /* Images.xcassets in Resources */,
+				BE58971C19DC799B00647263 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE58971F19DC799B00647263 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +596,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BE58970B19DC799B00647263 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE58974D19DC7AC000647263 /* Character.swift in Sources */,
+				BE58974E19DC7AC000647263 /* MainScene.swift in Sources */,
+				BE58974F19DC7AC000647263 /* Obstacle.swift in Sources */,
+				BE58971719DC799B00647263 /* main.m in Sources */,
+				BE58975019DC7AC000647263 /* GameplayScene.swift in Sources */,
+				BE58971519DC799B00647263 /* AppDelegate.m in Sources */,
+				BE58975719DC7B3B00647263 /* MSCaptureGLView.m in Sources */,
+				BE58975119DC7AC000647263 /* Goal.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE58971D19DC799B00647263 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE58972819DC799B00647263 /* FlappySwiftOSXTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -364,7 +627,28 @@
 			name = cocos2d;
 			targetProxy = B7378988180764180076A88C /* PBXContainerItemProxy */;
 		};
+		BE58972319DC799B00647263 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE58970E19DC799B00647263 /* FlappySwiftOSX */;
+			targetProxy = BE58972219DC799B00647263 /* PBXContainerItemProxy */;
+		};
+		BE58973919DC79B800647263 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = cocos2d;
+			targetProxy = BE58973819DC79B800647263 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BE58971A19DC799B00647263 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE58971B19DC799B00647263 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		B77F1CDC17B978D8009739AE /* Debug */ = {
@@ -481,6 +765,210 @@
 			};
 			name = Release;
 		};
+		BE58972A19DC799B00647263 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PREFIX_HEADER = Source/Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Applications/Xcode-Beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include",
+					"\"Source/libs/cocos2d-iphone/cocos2d\"/**",
+					"\"Source/libs/cocos2d-iphone/external/kazmath/include\"/**",
+					"\"Source/libs/cocos2d-iphone/external/ObjectAL\"/**",
+					"\"Source/libs/cocos2d-iphone/cocos2d-ui\"/**",
+					"\"Source/libs/cocos2d-iphone/external/Chipmunk/objectivec/include\"/**",
+					"\"Source/libs/cocos2d-iphone/external/Chipmunk/include\"/**",
+				);
+				INFOPLIST_FILE = FlappySwiftOSX/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lz",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = "FlappySwift-Bridging-Header.h";
+			};
+			name = Debug;
+		};
+		BE58972B19DC799B00647263 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = Source/Prefix.pch;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Applications/Xcode-Beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include",
+					"\"Source/libs/cocos2d-iphone/cocos2d\"/**",
+					"\"Source/libs/cocos2d-iphone/external/kazmath/include\"/**",
+					"\"Source/libs/cocos2d-iphone/external/ObjectAL\"/**",
+					"\"Source/libs/cocos2d-iphone/cocos2d-ui\"/**",
+					"\"Source/libs/cocos2d-iphone/external/Chipmunk/objectivec/include\"/**",
+					"\"Source/libs/cocos2d-iphone/external/Chipmunk/include\"/**",
+				);
+				INFOPLIST_FILE = FlappySwiftOSX/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lz",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = "FlappySwift-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		BE58972D19DC799B00647263 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = FlappySwiftOSXTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlappySwiftOSX.app/Contents/MacOS/FlappySwiftOSX";
+			};
+			name = Debug;
+		};
+		BE58972E19DC799B00647263 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = FlappySwiftOSXTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlappySwiftOSX.app/Contents/MacOS/FlappySwiftOSX";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -501,6 +989,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		BE58972919DC799B00647263 /* Build configuration list for PBXNativeTarget "FlappySwiftOSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE58972A19DC799B00647263 /* Debug */,
+				BE58972B19DC799B00647263 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BE58972C19DC799B00647263 /* Build configuration list for PBXNativeTarget "FlappySwiftOSXTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE58972D19DC799B00647263 /* Debug */,
+				BE58972E19DC799B00647263 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
