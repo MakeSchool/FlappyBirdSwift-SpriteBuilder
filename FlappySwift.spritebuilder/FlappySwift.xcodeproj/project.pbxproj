@@ -61,6 +61,8 @@
 		BE58975119DC7AC000647263 /* Goal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9256DD19D6A650009C1D57 /* Goal.swift */; };
 		BE58975719DC7B3B00647263 /* MSCaptureGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE58975619DC7B3B00647263 /* MSCaptureGLView.m */; };
 		BE58975819DC800600647263 /* libcocos2d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BE58973519DC79AA00647263 /* libcocos2d.a */; };
+		BED6F72019DE37650033D84F /* TutorialScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED6F71F19DE37650033D84F /* TutorialScene.swift */; };
+		BED6F72119DE37650033D84F /* TutorialScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED6F71F19DE37650033D84F /* TutorialScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -167,6 +169,7 @@
 		BE58974A19DC7A6100647263 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/lib/libz.dylib; sourceTree = DEVELOPER_DIR; };
 		BE58975519DC7B3B00647263 /* MSCaptureGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSCaptureGLView.h; sourceTree = "<group>"; };
 		BE58975619DC7B3B00647263 /* MSCaptureGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSCaptureGLView.m; sourceTree = "<group>"; };
+		BED6F71F19DE37650033D84F /* TutorialScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TutorialScene.swift; path = Source/TutorialScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,6 +230,7 @@
 		B737893C1807616C0076A88C /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				BED6F71F19DE37650033D84F /* TutorialScene.swift */,
 				5D6DF0A919CE4C1D00B211DF /* AppDelegate.swift */,
 				5D6DF0B019CE5E8100B211DF /* Character.swift */,
 				5D6DF0AC19CE4C5800B211DF /* MainScene.swift */,
@@ -590,6 +594,7 @@
 				5D6DF0AD19CE4C5800B211DF /* MainScene.swift in Sources */,
 				5D6DF0AF19CE509700B211DF /* GameplayScene.swift in Sources */,
 				5D6DF0B319CE65F900B211DF /* Obstacle.swift in Sources */,
+				BED6F72119DE37650033D84F /* TutorialScene.swift in Sources */,
 				5D6DF0AA19CE4C1D00B211DF /* AppDelegate.swift in Sources */,
 				5D9256DE19D6A650009C1D57 /* Goal.swift in Sources */,
 				5D6DF0B119CE5E8100B211DF /* Character.swift in Sources */,
@@ -601,6 +606,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE58974D19DC7AC000647263 /* Character.swift in Sources */,
+				BED6F72019DE37650033D84F /* TutorialScene.swift in Sources */,
 				BE58974E19DC7AC000647263 /* MainScene.swift in Sources */,
 				BE58974F19DC7AC000647263 /* Obstacle.swift in Sources */,
 				BE58971719DC799B00647263 /* main.m in Sources */,

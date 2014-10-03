@@ -25,6 +25,10 @@ class MainScene: GameplayScene {
     var _scoreLabel: CCLabelTTF!
     var _nameLabel: CCLabelTTF!
     
+    var trail: CCParticleSystem? = nil
+    var physicsNode: CCPhysicsNode!
+    var points: Int = 0
+    
     override init() {}
     
      deinit {
@@ -33,7 +37,7 @@ class MainScene: GameplayScene {
     }
     
     // is called when CCB file has completed loading
-    override func didLoadFromCCB() {
+    func didLoadFromCCB() {
         
         userInteractionEnabled = true
         
@@ -82,7 +86,7 @@ class MainScene: GameplayScene {
             }
             _sinceTouch = 0.0
             
-            super.tap()
+            self.tap()
         }
     }
     

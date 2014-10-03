@@ -5,7 +5,7 @@ Now that we have obstacles, we need to end the game if you hit them. To do so, w
 
 Add the following below the closing bracket of your ```update``` method, but before the closing bracket at the end of the program:
 
-    func collisionWithObstacle()
+    override func collisionWithObstacle()
     {
     	// This gets called when the bird collides with an obstacle
         self.gameOver()
@@ -21,7 +21,7 @@ the current score. At the end of your ```initialize``` method, add:
 
 If you play the game now, you will notice that a 0 is displayed, but your points don't increase. We will need a new method for that. After the closing bracket of your collisionWithObstacle method, but before the end of the program:
 
-    func passedObstacle() {
+    override func passedObstacle() {
         // Update the score
         self.increaseScore()
     }

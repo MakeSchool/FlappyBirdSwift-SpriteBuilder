@@ -80,7 +80,7 @@
     [self.window setRestorable:NO];
     
     // Run the first scene
-    [director pause];
+    //[director pause];
     [director runWithScene:[self startScene]];
 }
 
