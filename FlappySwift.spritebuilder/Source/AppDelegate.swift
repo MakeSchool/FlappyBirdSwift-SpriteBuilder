@@ -16,7 +16,7 @@ class AppDelegate: CCAppDelegate, UIApplicationDelegate {
         CCBReader.configureCCFileUtils()
         
         // Configure Cocos2d with the options set in SpriteBuilder
-        let cocos2dSetup: NSMutableDictionary = NSMutableDictionary(contentsOfFile:CCFileUtils.sharedFileUtils().fullPathFromRelativePath("configCocos2d.plist"));
+        let cocos2dSetup: NSMutableDictionary! = NSMutableDictionary(contentsOfFile:CCFileUtils.sharedFileUtils().fullPathFromRelativePath("configCocos2d.plist"));
         
         setupCocos2dWithOptions(cocos2dSetup);
         

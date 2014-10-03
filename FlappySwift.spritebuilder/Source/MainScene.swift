@@ -153,17 +153,17 @@ class MainScene: GameplayScene {
         }
     }
     
-    func ccPhysicsCollisionBegin(pair: CCPhysicsCollisionPair, character nodeA: CCNode, level nodeB: CCNode) -> Bool {
+    func ccPhysicsCollisionBegin(pair: CCPhysicsCollisionPair, character nodeA: CCNode, level nodeB: CCNode) -> ObjCBool {
         self.collisionWithObstacle()
         return false
     }
     
-    func ccPhysicsCollisionBegin(pair: CCPhysicsCollisionPair, character nodeA: CCNode, ground nodeB: CCNode) -> Bool {
+    func ccPhysicsCollisionBegin(pair: CCPhysicsCollisionPair, character nodeA: CCNode, ground nodeB: CCNode) -> ObjCBool {
         self.collisionWithObstacle()
         return true
     }
     
-    func ccPhysicsCollisionBegin(pair: CCPhysicsCollisionPair, character nodeA: CCNode, goal nodeB: CCNode) -> Bool {
+    func ccPhysicsCollisionBegin(pair: CCPhysicsCollisionPair, character nodeA: CCNode, goal nodeB: CCNode) -> ObjCBool {
         self.passedObstacle()
         return false
     }

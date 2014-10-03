@@ -997,6 +997,7 @@
 				BE58972B19DC799B00647263 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BE58972C19DC799B00647263 /* Build configuration list for PBXNativeTarget "FlappySwiftOSXTests" */ = {
 			isa = XCConfigurationList;
@@ -1005,6 +1006,7 @@
 				BE58972E19DC799B00647263 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
