@@ -67,7 +67,7 @@
     
 #ifdef DEBUG
     // Enable FPS and SPF
-    [director setDisplayStats:YES];
+    // [director setDisplayStats:YES];
 #endif
     
     // Connect the OpenGL view with the director

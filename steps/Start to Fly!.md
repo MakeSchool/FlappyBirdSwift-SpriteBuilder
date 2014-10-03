@@ -15,7 +15,7 @@ For your game to respond to input, we have to write a new method to be run whene
 
 	override func tap()
 	{
-  	// this will get called every time the player
+		// this will get called every time the player
 		// taps the screen.
 	}
 
