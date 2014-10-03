@@ -13,11 +13,11 @@ Make the Bird Flap!
 =======================
 For your game to respond to input, we have to write a new method to be run whenever the player taps the screen. Add the following after the closing bracket of the init method but before the final closing bracket of the program:
 
-	override func tap()
-	{
-        // this will get called every time the player
+		override func tap()
+		{
+  		// this will get called every time the player
     	// taps the screen.
-  }
+		}
 
 Now that we have code that is run every time the player taps the screen, we want to make the bird flap. Inside your ```tap``` method, add the following code:
 
