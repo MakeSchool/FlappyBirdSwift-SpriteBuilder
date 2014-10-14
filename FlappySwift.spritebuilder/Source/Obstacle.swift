@@ -21,10 +21,8 @@ class Obstacle: CCNode {
     func didLoadFromCCB() {
         
         _topPipe!.physicsBody.collisionType = "level"
-//        _topPipe!.physicsBody.sensor = true
         
         _bottomPipe!.physicsBody.collisionType = "level"
-//        _bottomPipe!.physicsBody.sensor = true
     }
     
     func setupRandomPosition() {
