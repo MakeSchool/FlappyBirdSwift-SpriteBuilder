@@ -190,7 +190,6 @@ class MainScene: GameplayScene {
         self.updateScore()
         character.removeFromParent()
         _gameOver = false
-        timeSinceObstacle = 0.0
       
         super.initialize()
     }
