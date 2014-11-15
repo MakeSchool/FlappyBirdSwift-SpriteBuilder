@@ -28,14 +28,12 @@ class MainScene: GameplayScene {
     var trail: CCParticleSystem? = nil
     var physicsNode: CCPhysicsNode!
     var points: Int = 0
+  
+    var g1Pos: CGPoint!
+    var g2Pos: CGPoint!
     
     override init() {}
-    
-     deinit {
-        println("deinit")
-        userInteractionEnabled = false
-    }
-    
+  
     // is called when CCB file has completed loading
     func didLoadFromCCB() {
         
@@ -61,6 +59,9 @@ class MainScene: GameplayScene {
             physicsNode.addChild(trail)
             c_trail.visible = false
         }
+      
+        g1Pos = _ground1.position
+        g2Pos = _ground2.position
 
         super.initialize()
     }
@@ -125,8 +126,8 @@ class MainScene: GameplayScene {
 
     override func restart() {
         println("RESTART");
-        
-        CCDirector.sharedDirector().replaceScene(CCBReader.loadAsScene("TestScene")) //TODO: this crashes the program
+        _restartButton.visible = false
+        self.resetLevel()
     }
 
     override func addObstacle() {
@@ -175,6 +176,22 @@ class MainScene: GameplayScene {
     override func increaseScore() {
         points++
         self.updateScore()
+    }
+  
+    func resetLevel() {
+        physicsNode.position = CGPoint(x:0, y:0)
+        _ground1.position = g1Pos
+        _ground2.position = g2Pos
+        for obs in _obstacles {
+            obs.removeFromParent()
+        }
+
+        points = 0
+        self.updateScore()
+        character.removeFromParent()
+        _gameOver = false
+      
+        super.initialize()
     }
 
     override func update(delta: CCTime) {
