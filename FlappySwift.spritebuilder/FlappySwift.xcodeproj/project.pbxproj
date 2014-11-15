@@ -147,6 +147,8 @@
 		B77F1B3F17B978D7009739AE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		B77F1B4117B978D7009739AE /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		B7B3713D180358F1007369CC /* libObjectiveChipmunk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libObjectiveChipmunk.a; path = "../libs/cocos2d-iphone/external/Chipmunk/xcode/build/Debug-iphoneos/libObjectiveChipmunk.a"; sourceTree = "<group>"; };
+		BCEE6A8119E6FAE7004B9A0D /* cocos2d.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cocos2d.h; path = "Source/libs/cocos2d-iphone/cocos2d/cocos2d.h"; sourceTree = "<group>"; };
+		BCEE6A8419E6FB0D004B9A0D /* cocos2d-ui.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "cocos2d-ui.h"; path = "Source/libs/cocos2d-iphone/cocos2d-ui/cocos2d-ui.h"; sourceTree = "<group>"; };
 		BE58970F19DC799B00647263 /* FlappySwiftOSX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlappySwiftOSX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE58971219DC799B00647263 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE58971319DC799B00647263 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -238,6 +240,8 @@
 				5D6DF0AE19CE509700B211DF /* GameplayScene.swift */,
 				5D9256DD19D6A650009C1D57 /* Goal.swift */,
 				5D6DF0A819CE4C1C00B211DF /* FlappySwift-Bridging-Header.h */,
+				BCEE6A8119E6FAE7004B9A0D /* cocos2d.h */,
+				BCEE6A8419E6FB0D004B9A0D /* cocos2d-ui.h */,
 			);
 			name = Source;
 			sourceTree = "<group>";

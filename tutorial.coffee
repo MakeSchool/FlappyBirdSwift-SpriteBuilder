@@ -8,3 +8,7 @@ exports.Tutorial = () ->
   step "Moving to the Right!"
   step "Adding Obstacles"
   step "Finishing Up"
+
+exports.Preprocess = (files) ->
+  path        = "FlappySwift.spritebuilder/Source/GameplayScene.swift"
+  files[path] = files[path].replace /func([\s\S]+?{)/igm, "override func$1"

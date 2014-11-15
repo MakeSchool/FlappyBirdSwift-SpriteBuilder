@@ -10,8 +10,8 @@ import Foundation
 
 class Obstacle: CCNode {
     
-    var _topPipe:CCNode? = nil
-    var _bottomPipe:CCNode? = nil
+    var _topPipe:CCNode!
+    var _bottomPipe:CCNode!
     
     let minimumYPosition:CGFloat = 200.0
     let maximumYPosition:CGFloat = 380.0
@@ -20,11 +20,9 @@ class Obstacle: CCNode {
     
     func didLoadFromCCB() {
         
-        _topPipe!.physicsBody.collisionType = "level"
-//        _topPipe!.physicsBody.sensor = true
-        
-        _bottomPipe!.physicsBody.collisionType = "level"
-//        _bottomPipe!.physicsBody.sensor = true
+        _topPipe.physicsBody.collisionType = "level"
+      
+        _bottomPipe.physicsBody.collisionType = "level"
     }
     
     func setupRandomPosition() {
