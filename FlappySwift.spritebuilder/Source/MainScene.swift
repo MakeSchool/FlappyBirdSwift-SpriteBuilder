@@ -92,7 +92,7 @@ class MainScene: GameplayScene {
     }
     
     #if os(iOS)
-    override func touchBegan(touch: UITouch, withEvent event: UIEvent) {
+    override func touchBegan(touch: CCTouch, withEvent event: CCTouchEvent) {
         handleTouch()
     }
     #elseif os(OSX)
