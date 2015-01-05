@@ -241,6 +241,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		657141211A5B268B00647D41 /* Obj-C Bridging */ = {
+			isa = PBXGroup;
+			children = (
+				5D6DF0A819CE4C1C00B211DF /* FlappySwift-Bridging-Header.h */,
+				BCEE6A8119E6FAE7004B9A0D /* cocos2d.h */,
+				BCEE6A8419E6FB0D004B9A0D /* cocos2d-ui.h */,
+			);
+			name = "Obj-C Bridging";
+			sourceTree = "<group>";
+		};
+		657141221A5B269E00647D41 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				BED6F71F19DE37650033D84F /* TutorialScene.swift */,
+				5D6DF0AE19CE509700B211DF /* GameplayScene.swift */,
+				5D6DF0AC19CE4C5800B211DF /* MainScene.swift */,
+			);
+			name = Scenes;
+			sourceTree = "<group>";
+		};
+		657141231A5B26B200647D41 /* Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				5D6DF0B019CE5E8100B211DF /* Character.swift */,
+				5D6DF0B219CE65F900B211DF /* Obstacle.swift */,
+				5D9256DD19D6A650009C1D57 /* Goal.swift */,
+			);
+			name = Nodes;
+			sourceTree = "<group>";
+		};
 		9222E2B918734FF800A246C7 /* libs */ = {
 			isa = PBXGroup;
 			children = (
@@ -253,16 +283,10 @@
 		B737893C1807616C0076A88C /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				BED6F71F19DE37650033D84F /* TutorialScene.swift */,
 				5D6DF0A919CE4C1D00B211DF /* AppDelegate.swift */,
-				5D6DF0B019CE5E8100B211DF /* Character.swift */,
-				5D6DF0AC19CE4C5800B211DF /* MainScene.swift */,
-				5D6DF0B219CE65F900B211DF /* Obstacle.swift */,
-				5D6DF0AE19CE509700B211DF /* GameplayScene.swift */,
-				5D9256DD19D6A650009C1D57 /* Goal.swift */,
-				5D6DF0A819CE4C1C00B211DF /* FlappySwift-Bridging-Header.h */,
-				BCEE6A8119E6FAE7004B9A0D /* cocos2d.h */,
-				BCEE6A8419E6FB0D004B9A0D /* cocos2d-ui.h */,
+				657141221A5B269E00647D41 /* Scenes */,
+				657141231A5B26B200647D41 /* Nodes */,
+				657141211A5B268B00647D41 /* Obj-C Bridging */,
 			);
 			name = Source;
 			sourceTree = "<group>";
