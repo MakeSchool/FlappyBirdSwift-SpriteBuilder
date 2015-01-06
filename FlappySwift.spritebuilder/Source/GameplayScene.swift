@@ -48,7 +48,8 @@ class GameplayScene: TutorialScene
         return true
     }
     
-    func ccPhysicsCollisionBegin(pair: CCPhysicsCollisionPair, character nodeA: CCNode, goal nodeB: CCNode) -> ObjCBool {
+    func ccPhysicsCollisionBegin(pair: CCPhysicsCollisionPair, character nodeA: CCNode, goal nodeB: CCNode) -> ObjCBool
+    {
         self.increaseScore()
         return false
     }
