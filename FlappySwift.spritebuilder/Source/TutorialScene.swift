@@ -16,10 +16,9 @@ enum DrawingOrder: Int {
 
 class TutorialScene: CCNode, CCPhysicsCollisionDelegate {
     var character: Character!
+    var physicsNode: CCPhysicsNode!
     
-    func tap() { }
-    
-    func addToScene(node: CCNode?) {}
+    func tap() {}
     
     func addObstacle() {}
     
@@ -34,10 +33,6 @@ class TutorialScene: CCNode, CCPhysicsCollisionDelegate {
     func addPowerup() {}
     
     func restart() {}
-    
-    func collisionWithObstacle() {}
-    
-    func passedObstacle() {}
     
     override func update(delta: CCTime) {}
 }

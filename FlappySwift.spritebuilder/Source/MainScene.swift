@@ -26,7 +26,6 @@ class MainScene: GameplayScene {
     var _nameLabel: CCLabelTTF!
     
     var trail: CCParticleSystem? = nil
-    var physicsNode: CCPhysicsNode!
     var points: Int = 0
   
     var g1Pos: CGPoint!
@@ -43,7 +42,7 @@ class MainScene: GameplayScene {
         
         for ground in _grounds {
             // set collision type
-            ground.physicsBody.collisionType = "ground"
+            ground.physicsBody.collisionType = "level"
             ground.zOrder = DrawingOrder.Ground.rawValue
         }
         
@@ -64,12 +63,6 @@ class MainScene: GameplayScene {
         g2Pos = _ground2.position
 
         super.initialize()
-    }
-    
-    override func addToScene(node: CCNode?) {
-        if let cNode = node {
-            physicsNode.addChild(node)
-        }
     }
     
     override func showScore() {
@@ -125,7 +118,6 @@ class MainScene: GameplayScene {
     }
 
     override func restart() {
-        println("RESTART");
         _restartButton.visible = false
         self.resetLevel()
     }
@@ -156,21 +148,6 @@ class MainScene: GameplayScene {
                 powerup.position = CGPoint(x:cLast.position.x + (second.position.x-first.position.x)/4.0 + cCharacter.contentSize.width, y:CGFloat(arc4random()%488)+200)
             }
         }
-    }
-    
-    func ccPhysicsCollisionBegin(pair: CCPhysicsCollisionPair, character nodeA: CCNode, level nodeB: CCNode) -> ObjCBool {
-        self.collisionWithObstacle()
-        return false
-    }
-    
-    func ccPhysicsCollisionBegin(pair: CCPhysicsCollisionPair, character nodeA: CCNode, ground nodeB: CCNode) -> ObjCBool {
-        self.collisionWithObstacle()
-        return true
-    }
-    
-    func ccPhysicsCollisionBegin(pair: CCPhysicsCollisionPair, character nodeA: CCNode, goal nodeB: CCNode) -> ObjCBool {
-        self.passedObstacle()
-        return false
     }
     
     override func increaseScore() {

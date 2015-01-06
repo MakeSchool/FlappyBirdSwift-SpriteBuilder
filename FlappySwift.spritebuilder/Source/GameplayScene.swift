@@ -13,9 +13,8 @@ class GameplayScene: TutorialScene
     {
         // put your initialization code below this line
         
-        character = Character.createFlappy()
-        
-        self.addToScene(character)
+        character = Character.createFlappy()  
+        physicsNode.addChild(character)
         
         self.showScore()
         
@@ -26,33 +25,33 @@ class GameplayScene: TutorialScene
     
     override func tap()
     {
-        character.flap()
+        var impulse:CGFloat = 200 - 2 * character.physicsBody.velocity.y
+        character.physicsBody.applyImpulse(CGPoint(x:0, y:impulse))
     }
     
     override func update(delta: CCTime)
     {
-        character.move()
+        character.physicsBody.velocity = CGPoint(x:80.0, y:character.physicsBody.velocity.y)
         
         timeSinceObstacle += delta;
         
         if timeSinceObstacle > 2
         {
-            
             self.addObstacle()
             timeSinceObstacle = 0
         }
     }
     
-    override func collisionWithObstacle()
+    func ccPhysicsCollisionBegin(pair: CCPhysicsCollisionPair, character nodeA: CCNode, level nodeB: CCNode) -> ObjCBool
     {
         self.gameOver()
+        return true
     }
     
-    override func passedObstacle()
-    {
+    func ccPhysicsCollisionBegin(pair: CCPhysicsCollisionPair, character nodeA: CCNode, goal nodeB: CCNode) -> ObjCBool {
         self.increaseScore()
+        return false
     }
-    
     
     // put new methods above this line
 }
