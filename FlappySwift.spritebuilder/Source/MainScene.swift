@@ -52,12 +52,10 @@ class MainScene: GameplayScene {
         powerups = []
         points = 0
         
-        trail = CCBReader.load("Trail") as CCParticleSystem?
-        if let c_trail = trail {
-            c_trail.particlePositionType = CCParticleSystemPositionType.Relative
-            physicsNode.addChild(trail)
-            c_trail.visible = false
-        }
+        let trail = CCBReader.load("Trail") as CCParticleSystem!
+        trail.particlePositionType = CCParticleSystemPositionType.Relative
+        physicsNode.addChild(trail)
+        trail.visible = false
       
         g1Pos = _ground1.position
         g2Pos = _ground2.position
