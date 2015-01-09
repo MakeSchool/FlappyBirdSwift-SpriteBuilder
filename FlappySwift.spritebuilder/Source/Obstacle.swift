@@ -26,7 +26,7 @@ class Obstacle: CCNode {
     }
     
     func setupRandomPosition() {
-        let random:CGFloat = (CGFloat(arc4random())/CGFloat(ARC4RANDOM_MAX))
+        let random:CGFloat = (CGFloat(rand()) / CGFloat(RAND_MAX))
         let range:CGFloat = maximumYPosition - minimumYPosition
         self.position = CGPoint(x:self.position.x, y:minimumYPosition + (random * range))
     }
